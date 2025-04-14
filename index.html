@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car Budva - Opera DOO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>OPERA DOO</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" onclick="closeMenu()">RENT A CAR</a>
+                <a href="#vehicles" onclick="closeMenu()">VOZILA</a>
+                <a href="#reserve" onclick="closeMenu()">REZERVACIJE</a>
+                <a href="pages/uslovi.html" onclick="closeMenu()">USLOVI IZNAJMLJIVANJA</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>RENT A CAR BUDVA</h1>
+            <div class="company-name">OPERA DOO</div>
+            <div class="scroll-down">
+                Pogledajte naše usluge
+                <br>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title" style="color: var(--text-light)">Dodatne informacije
+        </h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-car-crash"></i>
+                <h3>Osnovno osiguranje</h3>
+                <p>Sva naša vozila su pokrivena osnovnim osiguranjem za bezbednu vožnju.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Najbolja usluga</h3>
+                <p>Pružamo vrhunsku uslugu i profesionalan pristup svakom klijentu.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Dostava vozila na adresu</h3>
+                <p>Dostavljamo vozilo na aerodrom ili bilo koju adresu po vašem izboru.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+        <h2 class="section-title" style="color: var(--text-light)">Ponuda automobila</h2>
+        <div class="vehicles-grid">
+            <div class="vehicle-card">
+                <img src="https://i.ibb.co/8D1HxGc1/golf8.jpg" alt="Volkswagen Golf 7.5">
+                <h3 class="vehicle-name">Golf 7.5</h3>
+                <div class="vehicle-features">
+                    <span><i class="fas fa-cog"></i> Manual</span>
+                    <span><i class="fas fa-gas-pump"></i> Dizel</span>
+
+                    
+                </div>
+                <div class="vehicle-price" style="color: white;">od 50€/dan</div>
+                <button class="book-btn" onclick="scrollToReserve('golf7.5')">Rezerviši</button>
+            </div>
+            <div class="vehicle-card">
+                <img src="https://i.ibb.co/BHzBR7Bv/skoda-bela.png" alt="Škoda Rapid Bela">
+                <h3 class="vehicle-name">Škoda Rapid Bela</h3>
+                <div class="vehicle-features">
+                    <span><i class="fas fa-cog"></i> Auto</span>
+                    <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                </div>
+                <div class="vehicle-price" style="color: white;">od 45€/dan</div>
+                <button class="book-btn" onclick="scrollToReserve('skoda-rapid-bela')">Rezerviši</button>
+            </div>
+            <div class="vehicle-card">
+                <img src="https://i.ibb.co/yBQSq7Pt/skoda-siva.jpg" alt="Škoda Rapid Siva">
+                <h3 class="vehicle-name">Škoda Rapid Siva</h3>
+                <div class="vehicle-features">
+                    <span><i class="fas fa-cog"></i> Auto</span>
+                    <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                </div>
+                <div class="vehicle-price" style="color: white;">od 45€/dan</div>
+                <button class="book-btn" onclick="scrollToReserve('skoda-rapid-siva')">Rezerviši</button>
+            </div>
+            <div class="vehicle-card">
+                <img src="https://i.ibb.co/FLKcn4cT/smart-plavi.jpg" alt="Smart">
+                <h3 class="vehicle-name">Smart ForFour</h3>
+                <div class="vehicle-features">
+                    <span><i class="fas fa-cog"></i> Auto</span>
+                    <span><i class="fas fa-gas-pump"></i> Electric</span>
+                </div>
+                <div class="vehicle-price" style="color: white;">od 35€/dan</div>
+                <button class="book-btn" onclick="scrollToReserve('smart-forfour')">Rezerviši</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="reserve">
+        <h2 class="section-title" style="color: var(--text-light)">Pošaljite pitanje / Rezervacija vozila</h2>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Ime i prezime</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email adresa</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Broj telefona</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="car-model">Izaberite vozilo</label>
+                    <select id="car-model" name="car-model" required>
+                        <option value="">-- Izaberite vozilo --</option>
+                        <option value="golf7.5">Golf 7.5</option>
+                        <option value="skoda-rapid-bela">Škoda Rapid Bela</option>
+                        <option value="skoda-rapid-siva">Škoda Rapid Siva</option>
+                        <option value="smart-forfour">Smart ForFour</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-date">Datum preuzimanja</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="return-date">Datum vraćanja</label>
+                    <input type="date" id="return-date" name="return-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Dodatne napomene</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Pošaljite</button>
+            </form>
+        </div>
+    </section>
+
+    </div>
+    <section class="map-section">
+        <h2 class="section-title" style="color: var(--text-light)">Naša lokacija</h2>
+        <div class="map-container" style="width: 100%; height: 400px; margin: 0 auto; max-width: 1200px; padding: 0 2rem;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.4475076862387!2d18.805945076537818!3d42.29269741725884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd6c5c3e2e837%3A0x2a279b856b545c96!2sHotel%20Opera%20Jaz!5e0!3m2!1sen!2s!4v1689524547775!5m2!1sen!2s&markers=color:red%7C42.29269741725884,18.805945076537818"
+                width="100%" 
+                height="100%" 
+                style="border:0; border-radius: 10px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer style="background: #1f1f1f; padding: 4rem 1rem; margin-top: 4rem;">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: center;">
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">OPERA DOO</h3>
+                <p style="color: var(--text-light); line-height: 1.6;">
+                    Profesionalna usluga iznajmljivanja vozila u Budvi. Vaš pouzdan partner za rent a car usluge.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">Radno Vreme</h3>
+                <p style="color: var(--text-light); line-height: 1.6;">
+                    Ponedeljak - Petak: 08:00 - 20:00<br>
+                    Subota: 08:00 - 20:00<br>
+                    Nedelja: Ne radimo
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">Kontakt</h3>
+                <p style="color: var(--text-light); line-height: 1.6;">
+                    <i class="fas fa-phone"></i> <a href="tel:+38268909090" style="color: var(--text-light); text-decoration: none;">+382 68 909 090</a><br>
+                    <i class="fas fa-envelope"></i> <a href="mailto:opera.auto.bd@gmail.com" style="color: var(--text-light); text-decoration: none;">opera.auto.bd@gmail.com</a><br>
+                    <i class="fas fa-map-marker-alt"></i> Budva, Crna Gora
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">Pratite Nas</h3>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center;">
+                    <a href="https://www.instagram.com/opera.auto.bd/" target="_blank" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/38268909090" target="_blank" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="viber://chat?number=+38268909090" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-viber"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-light);">
+            <p>&copy; 2025 Opera DOO. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToReserve(carModel) {
+            // Scroll to the reserve section
+            document.getElementById('reserve').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            // Select the car in the dropdown
+            setTimeout(function() {
+                const selectElement = document.getElementById('car-model');
+                selectElement.value = carModel;
+            }, 800);
+        }
+    </script>
+</body>
+</html>
