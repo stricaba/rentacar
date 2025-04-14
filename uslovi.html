@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uslovi Iznajmljivanja - Opera DOO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>OPERA DOO</span>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html#home" onclick="closeMenu()">RENT A CAR</a>
+                <a href="../index.html#vehicles" onclick="closeMenu()">VOZILA</a>
+                <a href="../index.html#reserve" onclick="closeMenu()">REZERVACIJE</a>
+                <a href="#conditions" onclick="closeMenu()">USLOVI IZNAJMLJIVANJA</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services" style="margin-top: 100px;" id="conditions">
+        <h2 class="section-title" style="color: var(--text-light)">Uslovi Iznajmljivanja</h2>
+        <div style="max-width: 800px; margin: 0 auto; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: 10px;">
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Osnovni uslovi</h3>
+                <ul style="color: var(--text-light); line-height: 1.8;">
+                    <li>Minimalna starost vozača: 21 godina</li>
+                    <li>Vozačka dozvola: minimum 2 godine</li>
+                    <li>Potrebna dokumenta: lična karta ili pasoš, vozačka dozvola</li>
+                    <li>Depozit: 100-300€ (u zavisnosti od vozila)</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Uključeno u cenu</h3>
+                <ul style="color: var(--text-light); line-height: 1.8;">
+                    <li>Neograničena kilometraža</li>
+                    <li>Osnovno osiguranje vozila</li>
+                    <li>Tehnička podrška 24/7</li>
+                    <li>Redovno održavanje vozila</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Način plaćanja</h3>
+                <ul style="color: var(--text-light); line-height: 1.8;">
+                    <li>Gotovina</li>
+                    <li>Kreditne kartice (Visa, MasterCard)</li>
+                    <li>Plaćanje unapred putem bankovnog transfera</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Dodatne usluge</h3>
+                <ul style="color: var(--text-light); line-height: 1.8;">
+                    <li>Dostava/preuzimanje vozila na aerodrom: 30€</li>
+                    <li>GPS navigacija: 5€/dan</li>
+                    <li>Dečije sedište: 5€/dan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer style="background: #1f1f1f; padding: 4rem 1rem; margin-top: 4rem;">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: center;">
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">OPERA DOO</h3>
+                <p style="color: var(--text-light); line-height: 1.6;">
+                    Profesionalna usluga iznajmljivanja vozila u Budvi. Vaš pouzdan partner za rent a car usluge.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">Radno Vreme</h3>
+                <p style="color: var(--text-light); line-height: 1.6;">
+                    Ponedeljak - Petak: 08:00 - 20:00<br>
+                    Subota: 08:00 - 20:00<br>
+                    Nedelja: Ne radimo
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">Kontakt</h3>
+                <p style="color: var(--text-light); line-height: 1.6;">
+                    <i class="fas fa-phone"></i> +382 68 909 090<br>
+                    <i class="fas fa-envelope"></i> info@operadoo.me<br>
+                    <i class="fas fa-map-marker-alt"></i> Budva, Crna Gora
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.2rem;">Pratite Nas</h3>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center;">
+                    <a href="#" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" style="color: var(--text-light); font-size: 1.8rem; transition: color 0.3s ease;"><i class="fab fa-viber"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-light);">
+            <p>&copy; 2025 Opera DOO. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
